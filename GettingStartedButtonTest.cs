@@ -14,7 +14,7 @@ namespace Selenium
             Driver.FindElement(By.XPath("//a[@href='/GettingStarted/']")).Click();
             string expectedUrl = "https://dotnetfiddle.net/GettingStarted/";
             string actualUrl = Driver.Url;
-            Assert.AreEqual(expectedUrl, actualUrl);
+            Assert.AreEqual(expectedUrl, actualUrl, "Not expected url for GettingStarted button");
         }
     }
 }

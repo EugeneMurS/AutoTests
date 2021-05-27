@@ -21,7 +21,7 @@ namespace Selenium
             Driver.FindElement(By.XPath("//a[@href='/Account/MyFiddles']")).Click();
             string expectedUrl = "https://dotnetfiddle.net/Account/MyFiddles";
             string actualUrl = Driver.Url;
-            Assert.AreEqual (expectedUrl, actualUrl);
+            Assert.AreEqual (expectedUrl, actualUrl, "Not expected page's url after click 'MyFiddles'");
         }
     }
 }

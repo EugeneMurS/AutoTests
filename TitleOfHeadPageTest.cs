@@ -13,7 +13,7 @@ namespace Selenium
         {
             string expectedTitle = "C# Online Compiler | .NET Fiddle";
             string actualTitle = Driver.Title;
-            Assert.AreEqual(expectedTitle, actualTitle);
+            Assert.AreEqual(expectedTitle, actualTitle, "Not expected title for main page");
         }
     }
 }
