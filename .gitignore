@@ -1,0 +1,4 @@
+/bin/*
+/obj/*
+/.vs/*
+/Selenium.sln.DotSettings.user
